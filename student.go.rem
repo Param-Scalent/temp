@@ -1,0 +1,66 @@
+package main
+
+type Address struct {
+	street string
+	city   string
+	pin    int
+}
+
+type Student struct {
+	name    string
+	age     int
+	address []Address
+}
+
+func New() []Student {
+	return []Student{
+		{
+			name: "John",
+			age:  20,
+			address: []Address{
+				{
+					street: "abc lane",
+					city:   "mumbai",
+					pin:    422221,
+				},
+				{
+					street: "xyz lane",
+					city:   "mumbai",
+					pin:    422220,
+				},
+			},
+		},
+		{
+			name: "ABC",
+			age:  20,
+			address: []Address{
+				{
+					street: "abc lane",
+					city:   "mumbai",
+					pin:    422221,
+				},
+				{
+					street: "xyz lane",
+					city:   "mumbai",
+					pin:    422220,
+				},
+			},
+		},
+		{
+			name: "PQR",
+			age:  20,
+			address: []Address{
+				{
+					street: "abc lane",
+					city:   "mumbai",
+					pin:    422221,
+				},
+				{
+					street: "xyz lane",
+					city:   "mumbai",
+					pin:    422220,
+				},
+			},
+		},
+	}
+}
